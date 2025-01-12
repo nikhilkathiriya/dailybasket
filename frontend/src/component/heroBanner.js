@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { heroBanner } from "../common/constant";
+import { getCookie } from "../common/cookie"
 
 const HeroBanner = () => {
     return (<section style={{ backgroundImage: `url(${heroBanner.bannerImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
@@ -10,7 +11,7 @@ const HeroBanner = () => {
                     <p className="fs-4">{heroBanner.subTitle}</p>
                     <div className="d-flex gap-3">
                         <Link to="/category" className="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Start Shopping</Link>
-                        <Link to="/signup" className="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Join Now</Link>
+                        {!getCookie() && <Link to="/signup" className="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Join Now</Link>}
                     </div>
                     <div className="row my-5">
                         {heroBanner.portfolioText.map((item) => {

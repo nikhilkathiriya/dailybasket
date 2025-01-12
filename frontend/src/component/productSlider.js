@@ -1,7 +1,16 @@
 import ProductCard from "../common/productCard";
 import Slider from "react-slick";
+import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
 
 const ProductSlider = ({ title, data }) => {
+    const { userInfo } = useSelector((state) => state.user);
+    const [wishList, setWishList] = useState([]);
+
+    useEffect(()=> {
+        setWishList(data.filter(item => userInfo?.wishList?.includes(item.id)))
+    },[userInfo?.wishList])
+
     const productConfig = {
         dots: false,
         infinite: false,
@@ -53,9 +62,8 @@ const ProductSlider = ({ title, data }) => {
                 <div className="col-md-12">
                     <div className="product-grid row">
                         <Slider {...productConfig}>
-                            {data.map((item) =>
-                                item.isFavourite &&
-                                <div key={item.title} className="col"><ProductCard item={item} style={{ width: 'auto', marginRight: '30px', flexShrink: 0 }} /></div>
+                            {wishList.map((item) =>
+                                <div key={item.id} className="col"><ProductCard item={item} style={{ width: 'auto', marginRight: '30px', flexShrink: 0 }} /></div>
                             )}
                         </Slider>
                     </div>

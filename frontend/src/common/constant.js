@@ -62,15 +62,15 @@ export const heroBanner = {
     title: "<span class='fw- bold text-primary'>DailyBasket</span> Foods at your <span class='fw - bold'>Doorsteps</span>",
     subTitle: "",
     portfolioText: [{
-        views: "14k+",
+        views: "500+",
         text: "Product Varieties"
     },
     {
-        views: "50k+",
+        views: "100+",
         text: "Happy Customers"
     },
     {
-        views: "10+",
+        views: "1+",
         text: "Store Locations"
     }],
     advertisementTag: [{
@@ -3962,7 +3962,7 @@ export const product = [
         name: "Yellow Tail Jammy Red Roo 75cl",
         image: P313,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 7.75,
@@ -3986,7 +3986,7 @@ export const product = [
         name: "Yellow Tail Merlot 75cl",
         image: P315,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 7.75,
@@ -4034,7 +4034,7 @@ export const product = [
         name: "Yellow Tail Pinot Grigio 187ml",
         image: P319,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 2.75,
@@ -4046,7 +4046,7 @@ export const product = [
         name: "Yellow Tail Jammy Red Roo 187ml",
         image: P320,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 2.75,
@@ -4082,7 +4082,7 @@ export const product = [
         name: "Blossom Hill White Zinfandel 75cl",
         image: P323,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 6.50,
@@ -4166,7 +4166,7 @@ export const product = [
         name: "Smirnoff Ice Vodka Mixed Drink Bottle 4% Vol 70cl",
         image: P330,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 3.00,
@@ -4190,7 +4190,7 @@ export const product = [
         name: "Smirnoff Red No.21 Label Vodka Bottle 37.5% Vol 35cl",
         image: P332,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 10.75,
@@ -4202,7 +4202,7 @@ export const product = [
         name: "Smirnoff Cherry Drop Flavoured Vodka 70cl",
         image: P333,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 18.75,
@@ -4262,7 +4262,7 @@ export const product = [
         name: "Smirnoff Red Label Vodka and Cranberry Ready to Drink Premix 250ml",
         image: P338,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 2.25,
@@ -4286,7 +4286,7 @@ export const product = [
         name: "Gordon's Mediterranean Orange Gin Bottle 37.5% Vol 70cl",
         image: P340,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 18.50,
@@ -5582,7 +5582,7 @@ export const product = [
         name: "Kiwi Fruits 6 Pack",
         image: P448,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 1.20,
@@ -5654,7 +5654,7 @@ export const product = [
         name: "Red Onions Each",
         image: P454,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 0.25,
@@ -5666,7 +5666,7 @@ export const product = [
         name: "Large Baking Potatoes Each",
         image: P455,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 0.25,
@@ -5678,7 +5678,7 @@ export const product = [
         name: "Baby Plum Tomatoes 300g",
         image: P456,
         stock: 20,
-        isFavourite: true,
+        isFavourite: false,
 
         info: 'small',
         unitPrice: 1.00,
